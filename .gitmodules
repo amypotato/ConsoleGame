@@ -1,0 +1,3 @@
+[submodule "submodules/terminalpp"]
+	path = submodules/terminalpp
+	url = https://github.com/KazDragon/terminalpp.git
