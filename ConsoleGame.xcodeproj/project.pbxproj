@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		E1E432E928380BC7002B09AB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1E432E828380BC7002B09AB /* main.cpp */; };
+		E1E432F128380BF1002B09AB /* PlayerCharacter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1E432EF28380BF1002B09AB /* PlayerCharacter.cpp */; };
+		E1E432F428380EE0002B09AB /* Inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1E432F228380EE0002B09AB /* Inventory.cpp */; };
+		E1E432F928381062002B09AB /* TestRoom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1E432F728381062002B09AB /* TestRoom.cpp */; };
+		E1E432FC2838220A002B09AB /* Room.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1E432FA2838220A002B09AB /* Room.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		E1E432E528380BC7002B09AB /* ConsoleGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ConsoleGame; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E432E828380BC7002B09AB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E1E432EF28380BF1002B09AB /* PlayerCharacter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerCharacter.cpp; sourceTree = "<group>"; };
+		E1E432F028380BF1002B09AB /* PlayerCharacter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PlayerCharacter.hpp; sourceTree = "<group>"; };
+		E1E432F228380EE0002B09AB /* Inventory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Inventory.cpp; sourceTree = "<group>"; };
+		E1E432F328380EE0002B09AB /* Inventory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Inventory.hpp; sourceTree = "<group>"; };
+		E1E432F728381062002B09AB /* TestRoom.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestRoom.cpp; sourceTree = "<group>"; };
+		E1E432F828381062002B09AB /* TestRoom.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestRoom.hpp; sourceTree = "<group>"; };
+		E1E432FA2838220A002B09AB /* Room.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Room.cpp; sourceTree = "<group>"; };
+		E1E432FB2838220A002B09AB /* Room.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Room.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +69,33 @@
 		E1E432E728380BC7002B09AB /* ConsoleGame */ = {
 			isa = PBXGroup;
 			children = (
+				E1E432F628381042002B09AB /* Character */,
+				E1E432F528381038002B09AB /* Gameworld */,
 				E1E432E828380BC7002B09AB /* main.cpp */,
 			);
 			path = ConsoleGame;
+			sourceTree = "<group>";
+		};
+		E1E432F528381038002B09AB /* Gameworld */ = {
+			isa = PBXGroup;
+			children = (
+				E1E432F728381062002B09AB /* TestRoom.cpp */,
+				E1E432F828381062002B09AB /* TestRoom.hpp */,
+				E1E432FA2838220A002B09AB /* Room.cpp */,
+				E1E432FB2838220A002B09AB /* Room.hpp */,
+			);
+			path = Gameworld;
+			sourceTree = "<group>";
+		};
+		E1E432F628381042002B09AB /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				E1E432EF28380BF1002B09AB /* PlayerCharacter.cpp */,
+				E1E432F028380BF1002B09AB /* PlayerCharacter.hpp */,
+				E1E432F228380EE0002B09AB /* Inventory.cpp */,
+				E1E432F328380EE0002B09AB /* Inventory.hpp */,
+			);
+			path = Character;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1E432F128380BF1002B09AB /* PlayerCharacter.cpp in Sources */,
+				E1E432F428380EE0002B09AB /* Inventory.cpp in Sources */,
+				E1E432F928381062002B09AB /* TestRoom.cpp in Sources */,
 				E1E432E928380BC7002B09AB /* main.cpp in Sources */,
+				E1E432FC2838220A002B09AB /* Room.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +278,7 @@
 		E1E432ED28380BC7002B09AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9M9SM2M82;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -248,6 +289,7 @@
 		E1E432EE28380BC7002B09AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9M9SM2M82;
 				ENABLE_HARDENED_RUNTIME = YES;
